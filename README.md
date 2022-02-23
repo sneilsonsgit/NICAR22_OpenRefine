@@ -5,7 +5,7 @@
 
 <h2> OpenRefine is shiny and brilliant like its logo, the blue diamond above. </h2> 
 
-And it can help you clean big datasets even if you don't know how to code.
+And it can help you clean big datasets even if you don't know how to code!
 
 Objectives of the class: 
 - Learn how to open a .CSV file in OpenRefine 
