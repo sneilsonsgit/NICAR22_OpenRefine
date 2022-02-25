@@ -44,6 +44,29 @@ This data is in a table, which is fine, if you like tables. But what if you want
 
 This task would be kind of a headache if you did it by hand (and what if we had data on 100 years?!) So let's tell OpenRefine to do it instead, in a few easy steps. 
 
+First, click on the triangle next to the `2003` column name.
+
+[image]
+
+Then select `Transpose` and then `Transpose Cells Across Columns into Rows.` This will "pivot" the data from individual columns for each year to putting all of the years into one column and creating a bunch more rows, essentially making it longer and thinner.  If this wording doesn't feel super intuitive, don't worry - 
+
+
+
+Now let's switch it back, just for fun. Click the triangle next to the `year` column and select `Columnize by Key/Value Columns.` The following window will pop up.
+
+image
+
+We want to "columnize" the `year` column, and the value column to be `drug_incidents`, so this looks good! Go ahead and click OK.
+
+image
+
+There we go, back to wide format. And end of part I.
+
+<h1> Part 2: Cleaning dirty data </h1>
+
+Cleaning dirty data is OpenRefine's superpower. While I generally use simple R commands to pivot my data, I still will often run data through OpenRefine before I open it in RStudio because it is very smart at recognizing patterns in cells that might take me a long time to address in a script. 
+
+We are going to practice these skills with a spreadsheet
 
 
 
