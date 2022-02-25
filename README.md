@@ -66,7 +66,13 @@ There we go, back to wide format. And end of part I.
 
 Cleaning dirty data is OpenRefine's superpower. While I generally use simple R commands to pivot my data, I still will often run data through OpenRefine before I open it in RStudio because it is very smart at recognizing patterns in cells that might take me a long time to address in a script. 
 
-We are going to practice these skills with a spreadsheet
+We are going to practice these skills with a spreadsheet called `ucb_stanford_2014.csv`. This data is an ideal type of messy for this class, so props to Peter Aldhous, my former professor, for digging it up. The data includes federal government grants to UC Berkeley and Stanford University in 2014, downloaded from <a href="https://www.usaspending.gov/">USASpending.gov.</a> 
+
+Go ahead and click the `Open...` button in the top right corner of your OpenRefine window. That should take you back to the OpenRefine landing page. Then click `Choose Files` again, and this time, select `ucg_stanford_2014.csv`. Go ahead and hit `next`, and then `Create Project`. Your window should look like this:
+
+IMAGE
+
+Now the real fun begins. 
 
 
 
