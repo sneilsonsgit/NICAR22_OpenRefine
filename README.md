@@ -44,21 +44,29 @@ This data is in a table, which is fine, if you like tables. But what if you want
 
 This task would be kind of a headache if you did it by hand (and what if we had data on 100 years?!) So let's tell OpenRefine to do it instead, in a few easy steps. 
 
-First, click on the triangle next to the `2003` column name.
+First, click on the triangle next to the `2003` column name. Then select `Transpose` and then `Transpose Cells Across Columns into Rows.`
 
-[image]
+<a href="https://drive.google.com/uc?export=view&id=1_lS-i-hJzSI3VTcmtEl6dFdDab0C1Vw_"><img src="https://drive.google.com/uc?export=view&id=1_lS-i-hJzSI3VTcmtEl6dFdDab0C1Vw_" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
 
-Then select `Transpose` and then `Transpose Cells Across Columns into Rows.` This will "pivot" the data from individual columns for each year to putting all of the years into one column and creating a bunch more rows, essentially making it longer and thinner.  If this wording doesn't feel super intuitive, don't worry - 
+This will "pivot" the data from individual columns for each year to putting all of the years into one column and creating a bunch more rows, essentially making it longer and thinner.  If this wording doesn't feel super intuitive yet, don't worry. It's quite common to feel that way.
 
+But before we pivot, let's make sure the data comes out looking the way we want it to. Make sure the box marked `Fill down in other columns` is checked, and select `2003` to `(last column)` to make sure you're transposing all of the year columns into a single column. 
 
+<a href="https://drive.google.com/uc?export=view&id=1BdQz0jr-JmzQjZyDP6GjDi_HHaAdUm-j"><img src="https://drive.google.com/uc?export=view&id=1BdQz0jr-JmzQjZyDP6GjDi_HHaAdUm-j" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
 
-Now let's switch it back, just for fun. Click the triangle next to the `year` column and select `Columnize by Key/Value Columns.` The following window will pop up.
+Give your `Key Column` the name `year`, and your `Value Column` the name `drug_incidents` or `incidents` or whatever you'd like. Then click `Transpose.`
 
-image
+Your data should now look like this:
 
-We want to "columnize" the `year` column, and the value column to be `drug_incidents`, so this looks good! Go ahead and click OK.
+<a href="https://drive.google.com/uc?export=view&id=1CTstpPXAOUvs29IT44WLKTkwM3R3MCQO"><img src="https://drive.google.com/uc?export=view&id=1CTstpPXAOUvs29IT44WLKTkwM3R3MCQO" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
 
-image
+Now let's switch it back, because why not?! Click the triangle next to the `year` column and select `Columnize by Key/Value Columns.` The following window will pop up.
+
+<a href="https://drive.google.com/uc?export=view&id=1sQa0uBxj4UHmA_VzLx-8DDojVwCkgrG_"><img src="https://drive.google.com/uc?export=view&id=1sQa0uBxj4UHmA_VzLx-8DDojVwCkgrG_" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
+
+We want to "columnize" the `year` column, and make sure the numbers in the `drug_incidents` column fill in the values for each year, so this looks good! Go ahead and click OK.
+
+<a href="https://drive.google.com/uc?export=view&id=1cBsph2w6Q03kcXmM1pCt0O8kxMon7gbv"><img src="https://drive.google.com/uc?export=view&id=1cBsph2w6Q03kcXmM1pCt0O8kxMon7gbv" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
 
 There we go, back to wide format. And end of part I.
 
@@ -70,10 +78,13 @@ We are going to practice these skills with a spreadsheet called `ucb_stanford_20
 
 Go ahead and click the `Open...` button in the top right corner of your OpenRefine window. That should take you back to the OpenRefine landing page. Then click `Choose Files` again, and this time, select `ucg_stanford_2014.csv`. Go ahead and hit `next`, and then `Create Project`. Your window should look like this:
 
-IMAGE
+<a href="https://drive.google.com/uc?export=view&id=1bFm-KPGkbxOOrwVBlwFcirszXdUoRMQf"><img src="https://drive.google.com/uc?export=view&id=1bFm-KPGkbxOOrwVBlwFcirszXdUoRMQf" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
 
 Now the real fun begins. 
 
-
+<h2> Trimming whitespace </h2>
+<h2> Convert fields to dates </h2>
+<h2> Clustering </h2>
+<h2> make a mistake? no worries, just undo </h2>
 
 
