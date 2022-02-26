@@ -99,12 +99,29 @@ Then get rid of the other three annoying characters, `)` `,` and `$`, by typing 
 
 <h2> Trimming whitespace </h2>
 
+Let's see if we can group by recipient. Select the drop-down menu in the `Recipient` column and then click `Facet` -> `Text Facet.` Your page should now have a bar on the left that looks like this:
+
+IMAGE
+
+Weird. Why are there so many different versions of what look like the same recipients? There are 28, to be precise, yet we know that the data should only include contributions made to two distinct institutions: Stanford and Berkeley. So let's clean this column up. Go ahead and select `Cluster.` 
+
+Clustering is my favorite part of OpenRefine, because it can allow you to quickly clean up a big dataset by identifying similar text values without a bunch of fancy fuzzy matching or other complex processes. Let's explore the different types of clustering we can do here.
+
+OpenRefine uses two main categories of clustering method. The first, `key collision,` creates alternate versions of strings that contain only the most meaningful parts (the key part), then buckets the strings together based on whether those keys match (the collision part). The second, `nearest neighbor,` bins together strings that TKTKTK
+
+The first type, `fingerprint,` is the default method, 
 
 
-
+So now our `recipient` column has been cleaned up, but it looks like the 
 
 <h2> Convert fields to dates </h2>
-<h2> Clustering </h2>
-<h2> make a mistake? no worries, just undo </h2>
+<h2> Clustering </h2> 
+
+<h2> make a mistake? no worries, just undo! </h2>
+
+OpenRefine allows you to quickly and easily step back in time, and makes it possible to be more discerning about 
 
 
+<h2> Finally, make your cleaning process repeatable </h2>
+
+Click the Extract button. When you get to the dialogue box, check the tasks that you'd want to repeat on similar data. For instance, we'd probably want to keep the transformations we made to the financial award column, the whitespace trimming and the case transformations.
