@@ -76,13 +76,33 @@ Cleaning dirty data is OpenRefine's superpower. While I generally use simple R c
 
 We are going to practice these skills with a spreadsheet called `ucb_stanford_2014.csv`. This data is an ideal type of messy for this class, so props to Peter Aldhous, my former professor, for digging it up. The data includes federal government grants to UC Berkeley and Stanford University in 2014, downloaded from <a href="https://www.usaspending.gov/">USASpending.gov.</a> 
 
-Go ahead and click the `Open...` button in the top right corner of your OpenRefine window. That should take you back to the OpenRefine landing page. Then click `Choose Files` again, and this time, select `ucg_stanford_2014.csv`. Go ahead and hit `next`, and then `Create Project`. Your window should look like this:
+Go ahead and click the `Open...` button in the top right corner of your OpenRefine window. That should take you back to the OpenRefine landing page. Then click `Choose Files` again, and this time, select `ucb_stanford_2014.csv`. Go ahead and hit `next`. Make sure to click `Attempt to parse cell text into numbers` so that columns with numeric values get recognized as such. 
 
-<a href="https://drive.google.com/uc?export=view&id=1bFm-KPGkbxOOrwVBlwFcirszXdUoRMQf"><img src="https://drive.google.com/uc?export=view&id=1bFm-KPGkbxOOrwVBlwFcirszXdUoRMQf" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
+After configuring that setting, click `Create Project`. Your window should look like this:
+
+<a href="https://drive.google.com/uc?export=view&id=1SMdDg2lkvOkNKx-HrUoxZzgwHHME55I2"><img src="https://drive.google.com/uc?export=view&id=1SMdDg2lkvOkNKx-HrUoxZzgwHHME55I2" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
 
 Now the real fun begins. 
 
+<h2> dealing with additional characters </h2>
+
+Right off the bat, we can see the money column is a bit messy. Some of the values have parentheses to indicate they are negative amounts, and some have commas while others do not. These characters and the $ symbols are making the column get recognized as a text column rather than as numeric, which we'll need if we want to calculate donation totals. 
+
+There's a fancier way to do this, but for now, you can just click on the drop-down arrow next to `Award Amount,` select `Edit Cells` and then click `Replace.` Type in an opening parenthesis `(` into the `Find` box and then in the `Replace` box, type in a `-` dash. Then hit ok. 
+
+<a href="https://drive.google.com/uc?export=view&id=19HINJxs4l076WOxxStzSIgDfmzXXYt9Q"><img src="https://drive.google.com/uc?export=view&id=19HINJxs4l076WOxxStzSIgDfmzXXYt9Q" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
+
+Then get rid of the other three annoying characters, `)` `,` and `$`, by typing them into the `Find` box and then leaving the `Replace` box blank. Once you do this, you can once again select `Edit Cells,` but this time select `Common Transforms` and then click `To Number.  Your final column should look like this:
+
+<a href="https://drive.google.com/uc?export=view&id=1eCnUIysQPaVAd9heCYAZNKVfjwruGYJg"><img src="https://drive.google.com/uc?export=view&id=1eCnUIysQPaVAd9heCYAZNKVfjwruGYJg" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
+
+
 <h2> Trimming whitespace </h2>
+
+
+
+
+
 <h2> Convert fields to dates </h2>
 <h2> Clustering </h2>
 <h2> make a mistake? no worries, just undo </h2>
