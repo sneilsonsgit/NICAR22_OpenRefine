@@ -96,8 +96,7 @@ Then get rid of the other three annoying characters, `)` `,` and `$`, by typing 
 
 <a href="https://drive.google.com/uc?export=view&id=1eCnUIysQPaVAd9heCYAZNKVfjwruGYJg"><img src="https://drive.google.com/uc?export=view&id=1eCnUIysQPaVAd9heCYAZNKVfjwruGYJg" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
 
-
-<h2> Trimming whitespace </h2>
+<h2> Clustering </h2>
 
 Let's see if we can group by recipient. Select the drop-down menu in the `Recipient` column and then click `Facet` -> `Text Facet.` Your page should now have a bar on the left that looks like this:
 
@@ -109,13 +108,13 @@ Clustering is my favorite part of OpenRefine, because it can allow you to quickl
 
 OpenRefine uses two main categories of clustering method. The first, `key collision,` creates alternate versions of strings that contain only the most meaningful parts (the key part), then buckets the strings together based on whether those keys match (the collision part). The second, `nearest neighbor,` bins together strings that TKTKTK
 
-The first type, `fingerprint,` is the default method, 
-
+We are going to focus on `key collision` because it tends to be more efficient. The first, `fingerprint,` is the default key collision method, because it tends to make the fewest mistakes (`fingerprint` groups different strings together by removing whitespace, changing all characters to lowercase, removing punctuation and several other intuitive steps.) There's also `metaphone3`, a method that transforms strings into how they are typically pronounced. This is useful for errors that involve misspellings. For a more detailed explanation on clustering methods, including a detailed breakdown of `nearest neighbor` methods, see <a href="https://github.com/tfmorris/OpenRefine/wiki/Clustering-In-Depth"> this link. </a>
 
 So now our `recipient` column has been cleaned up, but it looks like the 
 
-<h2> Convert fields to dates </h2>
-<h2> Clustering </h2> 
+<h2> Convert fields to dates </h2> 
+
+<h2> Trimming whitespace </h2>
 
 <h2> make a mistake? no worries, just undo! </h2>
 
