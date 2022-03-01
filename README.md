@@ -3,7 +3,7 @@
 
 ![OpenRefine is shiny and brilliant like a lil blue diamond](https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_7bbddfe86a11f15ceb710ca21da17b97/openrefine.jpg)
 
-<h2> OpenRefine is shiny and brilliant like its logo, the blue diamond above. </h2> 
+<h2> OpenRefine is shiny and brilliant, just like its logo. </h2> 
 
 And it can help you clean big datasets even if you don't know how to code!
 
