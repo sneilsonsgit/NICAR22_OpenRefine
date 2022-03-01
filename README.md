@@ -70,8 +70,7 @@ We want to "columnize" the `year` column, and make sure the numbers in the `drug
 
 There we go, back to wide format. For fun, try `sort`ing the neighborhoods by order of most reported drug incidents in 2018. Click the drop-down menu next to the `2018` column, then `Sort` and then `Sort...` 
 
-<a href="https://drive.google.com/uc?export=view&id=1z-SBKw2jeelauD-b4kQqiODE9k1f1LXZ"><img src="https://drive.google.com/uc?export=view&id=
-1z-SBKw2jeelauD-b4kQqiODE9k1f1LXZ" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
+<a href="https://drive.google.com/uc?export=view&id=1z-SBKw2jeelauD-b4kQqiODE9k1f1LXZ"><img src="https://drive.google.com/uc?export=view&id=1z-SBKw2jeelauD-b4kQqiODE9k1f1LXZ" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
 
 You can now sort the data as numbers, with the largest number appearing first.
 
