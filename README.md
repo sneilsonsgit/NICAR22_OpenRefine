@@ -30,13 +30,13 @@ You will hopefully be taken to a window that looks a lil something like this:
 
 <a href="https://drive.google.com/uc?export=view&id=1Vld9F26ouEIuHBtO17G46G7O67Lw6CqU"><img src="https://drive.google.com/uc?export=view&id=1Vld9F26ouEIuHBtO17G46G7O67Lw6CqU" style="width: 650px; max-width: 100%; height: auto" title="click" /></a>
 
-Hmmm, that data looks nice and neat. Go ahead and click the <b>`Create Project`</b> button in the top right corner. 
+Hmmm, that data looks nice and neat. Go ahead and select the `Attempt to parse cell text into numbers` box and then click the <b>`Create Project`</b> button in the top right corner. 
+
+<a href="https://drive.google.com/uc?export=view&id=1-svLXKxNKKAPOkokkKvUrUVBlfhzamE5"><img src="https://drive.google.com/uc?export=view&id=1-svLXKxNKKAPOkokkKvUrUVBlfhzamE5" style="width: 650px; max-width: 100%; height: auto" title="click" /></a>
 
 <h2> Voila. </h2> 
 
-We are now officially in data-editing land.
-
-<a href="https://drive.google.com/uc?export=view&id=1RbKsueGSbTMl8IbNHK-LArapv0i2R429"><img src="https://drive.google.com/uc?export=view&id=1RbKsueGSbTMl8IbNHK-LArapv0i2R429" style="width: 650px; max-width: 100%; height: auto" title="click" /></a>
+We are now officially in data-editing land. Your numbers should appear green, but otherwise the table should look similar to how it looked before.
 
 <h1> Part 1: Changing data from wide to long. </h1>
 
@@ -46,33 +46,40 @@ This task would be kind of a headache if you did it by hand (and what if we had 
 
 First, click on the triangle next to the `2003` column name. Then select `Transpose` and then `Transpose Cells Across Columns into Rows.`
 
-<a href="https://drive.google.com/uc?export=view&id=1_lS-i-hJzSI3VTcmtEl6dFdDab0C1Vw_"><img src="https://drive.google.com/uc?export=view&id=1_lS-i-hJzSI3VTcmtEl6dFdDab0C1Vw_" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
+<a href="https://drive.google.com/uc?export=view&id=1UFh3Oursm6IdfbRLYLmBKW2Eajdewc7n"><img src="https://drive.google.com/uc?export=view&id=1UFh3Oursm6IdfbRLYLmBKW2Eajdewc7n" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
 
 This will "pivot" the data from individual columns for each year to putting all of the years into one column and creating a bunch more rows, essentially making it longer and thinner.  If this wording doesn't feel super intuitive yet, don't worry. It's quite common to feel that way.
 
 But before we pivot, let's make sure the data comes out looking the way we want it to. Make sure the box marked `Fill down in other columns` is checked, and select `2003` to `(last column)` to make sure you're transposing all of the year columns into a single column. 
 
-<a href="https://drive.google.com/uc?export=view&id=1BdQz0jr-JmzQjZyDP6GjDi_HHaAdUm-j"><img src="https://drive.google.com/uc?export=view&id=1BdQz0jr-JmzQjZyDP6GjDi_HHaAdUm-j" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
+<a href="https://drive.google.com/uc?export=view&id=1yPU5nEucXv4bel7VHKyrYcD9iD9I4nND"><img src="https://drive.google.com/uc?export=view&id=1yPU5nEucXv4bel7VHKyrYcD9iD9I4nND" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
 
 Give your `Key Column` the name `year`, and your `Value Column` the name `drug_incidents` or `incidents` or whatever you'd like. Then click `Transpose.`
 
 Your data should now look like this:
 
-<a href="https://drive.google.com/uc?export=view&id=1CTstpPXAOUvs29IT44WLKTkwM3R3MCQO"><img src="https://drive.google.com/uc?export=view&id=1CTstpPXAOUvs29IT44WLKTkwM3R3MCQO" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
+<a href="https://drive.google.com/uc?export=view&id=1p6dh-DkXHOQ7OyNA9IPSOw39uH0MmakP"><img src="https://drive.google.com/uc?export=view&id=1p6dh-DkXHOQ7OyNA9IPSOw39uH0MmakP" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
 
 Now let's switch it back, because why not?! Click the triangle next to the `year` column and select `Columnize by Key/Value Columns.` The following window will pop up.
 
-<a href="https://drive.google.com/uc?export=view&id=1sQa0uBxj4UHmA_VzLx-8DDojVwCkgrG_"><img src="https://drive.google.com/uc?export=view&id=1sQa0uBxj4UHmA_VzLx-8DDojVwCkgrG_" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
+<a href="https://drive.google.com/uc?export=view&id=1cbbL3R33q_ZD85fHskbgCbdONd3ParXy"><img src="https://drive.google.com/uc?export=view&id=1cbbL3R33q_ZD85fHskbgCbdONd3ParXy" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
 
 We want to "columnize" the `year` column, and make sure the numbers in the `drug_incidents` column fill in the values for each year, so this looks good! Go ahead and click OK.
 
-<a href="https://drive.google.com/uc?export=view&id=1cBsph2w6Q03kcXmM1pCt0O8kxMon7gbv"><img src="https://drive.google.com/uc?export=view&id=1cBsph2w6Q03kcXmM1pCt0O8kxMon7gbv" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
+<a href="https://drive.google.com/uc?export=view&id=10VpcUYkfoxVgQ4zaAftKRyE8upeSFf39"><img src="https://drive.google.com/uc?export=view&id=10VpcUYkfoxVgQ4zaAftKRyE8upeSFf39" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
 
-There we go, back to wide format. And end of part I.
+There we go, back to wide format. For fun, try `sort`ing the neighborhoods by order of most reported drug incidents in 2018. Click the drop-down menu next to the `2018` column, then `Sort` and then `Sort...` 
+
+<a href="https://drive.google.com/uc?export=view&id=1z-SBKw2jeelauD-b4kQqiODE9k1f1LXZ"><img src="https://drive.google.com/uc?export=view&id=
+1z-SBKw2jeelauD-b4kQqiODE9k1f1LXZ" style="width: 650px; max-width: 100%; height: auto" title="click"/></a>
+
+You can now sort the data as numbers, with the largest number appearing first.
+
+Cool! That is the end of part I.
 
 <h1> Part 2: Cleaning dirty data </h1>
 
-Cleaning dirty data is OpenRefine's superpower. While I generally use simple R commands to pivot my data, I still will often run data through OpenRefine before I open it in RStudio because it is very smart at recognizing patterns in cells that might take me a long time to address in a script. 
+A lot of the stuff we just did can be done in Google Spreadsheets pretty easily. But this next part, which will involve cleaning dirty data, is OpenRefine's superpower. While I generally use simple R commands to pivot my data, I still will often run data through OpenRefine before I open it in RStudio because it is very smart at recognizing patterns in cells that might take me longer to address in an R script. 
 
 We are going to practice these skills with a spreadsheet called `ucb_stanford_2014.csv`. This data is an ideal level of messy for this class, so props to Peter Aldhous, my former professor, for digging it up (and for teaching me much of the steps we will take with the data). This data includes federal government grants to UC Berkeley and Stanford University in 2014, downloaded from <a href="https://www.usaspending.gov/">USASpending.gov.</a> 
 
