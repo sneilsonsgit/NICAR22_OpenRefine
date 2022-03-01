@@ -186,5 +186,14 @@ Now if you want to apply the same commands to a similar data file, you can! Just
 
 That's all from me :) Hope you enjoyed the class, and please let me know if you have additional questions about OpenRefine or other stuff that I know anything about. 
 
+<h2>More Resources</h2>
 
+OpenRefine Documentation:
+https://docs.openrefine.org/
+
+Book: Using OpenRefine
+https://www.packtpub.com/product/using-openrefine/9781783289080
+
+Video Tutorial:
+https://www.youtube.com/c/Refinepro/featured
 
