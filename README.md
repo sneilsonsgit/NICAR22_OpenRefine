@@ -8,7 +8,7 @@
 And it can help you clean big datasets even if you don't know how to code!
 
 Objectives of the class: 
-- Learn how to open a .CSV file in OpenRefine 
+- Learn how to open a CSV file in OpenRefine 
 - Learn how to use OpenRefine to pivot data and make it easier to work with
 - Learn faceting, clustering
 - Export cleaned data
